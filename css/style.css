@@ -1,1 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: whitesmoke;
+}
+
+header,
+h1 {
+    text-align: center;
+    background-color: #1a5229;
+    margin: 0;
+    height: 13vh;
+}
+
+.title {
+    padding-top: 2.3%;
+    color: #d6d934;
+}
+
+.intro {
+    text-align: center;
+    padding: 35px 0 35px 0;
+    border-bottom: 3px solid black;
+    margin: 0 5%;
+}
+
+.intro h2 {
+    color: #1a5229;
+}
+
+.intro p {
+    color: #d6d934;
+    padding-top: 4px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+}
+
+.form {
+    margin: 0 5%;
+    border: none;
+    margin-top: 2px;
+    padding: 3rem 0 3rem 0;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+legend {
+    font-size: 15px;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+label {
+    margin-top: .8rem;
+    padding-left: 15px;
+
+}
+
+input[type=text],
+select {
+    border: none;
+    text-align: right;
+    height: 40px;
+    background-color: rgba(220, 220, 220, .5);
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    outline-color: #47bbff;
+    outline-width: 15px;
+    transition: 1.2s;
+}
+
+input[name=zip] {
+    width: 40%;
+    margin-right: 40%;
+}
+
+.footer {
+    margin: 0 20%;
+    padding-top: 3rem;
+}
+
+.footer legend {
+    font-size: 25px;
+    font-weight: 900;
+    color: #1a5229;
+    border-bottom: 1px solid black;
+}
+
+.footer legend,
+p,
+h3 {
+    padding: 20px 0 15px 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+}
+
+li {
+    padding-top: 15px;
+    margin: 0;
+}
+
+li label {
+    padding-left: 20px;
+}
+
+.textarea {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0 10px 0;
+}
+
+textarea {
+    margin-bottom: 25px;
+    height: 6.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(220, 220, 220, .5)
+}
+
+.textarea button {
+    background-color: rgb(10, 179, 108);
+    color: white;
+    height: 50px;
+    font-size: 23px;
+    border: none;
+    border-radius: 5px;
+}
+
+.final {
+    text-align: center;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+
+    .intro {
+        margin: 0 20%;
+    }
+
+    .form {
+        margin: .1% 20%;
+        border-top: 1px solid black
+    }
+
+    input[type=text] {
+        width: 60%;
+    }
+
+    input[name=zip] {
+        width: 20%;
+    }
+
+    .col {
+        flex-direction: row;
+    }
+
+    select {
+        width: 60%;
+    }
+}
