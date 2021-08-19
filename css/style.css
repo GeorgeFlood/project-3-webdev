@@ -84,7 +84,7 @@ input::placeholder {
 }
 
 input:focus,
-select{
+select:focus{
     outline-color: #47bbff;
     outline-width: 20px;
     transition: .5s;
