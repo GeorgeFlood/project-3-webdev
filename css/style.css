@@ -83,7 +83,7 @@ input::placeholder {
     text-align: right;
 }
 
-input[type=text]:focus {
+input:focus{
     outline-color: #47bbff;
     outline-width: 20px;
     transition: .5s;
